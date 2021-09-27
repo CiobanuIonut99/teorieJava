@@ -6,7 +6,6 @@ import lombok.*;
 @Getter
 @Setter
 @AllArgsConstructor
-@NoArgsConstructor
 public class Student {
     private String name;
     private int age;
@@ -15,11 +14,15 @@ public class Student {
     private boolean hasScutire;
 
 
+public Student(){
+    System.out.println("Salut sunt constructor");
+}
 
+public final void mess(String aion){
+final int num = 1300;
 
-
-
-
+    System.out.println(num);
+}
 
 
 
